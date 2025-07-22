@@ -22,7 +22,7 @@
   border-bottom: 1px solid rgba(0,0,0,0.05);
   border-radius: 1rem 1rem 0 0;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-overflow: ellipsis;
   text-align: center;
 }
@@ -50,4 +50,4 @@
   .custom-link:hover {
     text-decoration: underline;
   }
-  
+ 

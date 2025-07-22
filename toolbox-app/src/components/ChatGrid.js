@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { FaRobot, FaGithub, FaMicrophone, FaSatelliteDish, FaBrain, FaEye, FaComments, FaCalculator } from 'react-icons/fa';
 import './ChatGrid.css';
-// import './FloatingButtons.css';
+
 
 const gridItems = [
   {

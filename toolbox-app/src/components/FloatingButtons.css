@@ -1,13 +1,23 @@
+/* .floating-buttons {
+  position: fixed;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+} */
+
 .floating-buttons {
   position: fixed;
+  bottom: 20px; /* Place the whole button column from the bottom */
   z-index: 1050;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
+
 .floating-buttons.right {
-  right: 24px;
+  right: 20px;
 }
 
 .floating-buttons.left {
@@ -15,6 +25,7 @@
 }
 
 .floating-btn {
+  --btn-step: 60px;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -33,5 +44,49 @@
 .floating-btn:hover, .floating-btn:focus {
   transform: scale(1.12);
   box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .floating-buttons.right {
+    right: 8px;
+  }
+  .floating-buttons.left {
+    left: 8px;
+  }
+  .floating-btn {
+    --btn-step: 44px; /* or a smaller value if needed */
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-content {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 6px 8px;
+  border-radius: 6px;
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.2s;
+  user-select: text; /* allows copy */
+}
+
+.tooltip-wrapper:hover .tooltip-content,
+.tooltip-wrapper:focus-within .tooltip-content {
+  visibility: visible;
   opacity: 1;
 }
