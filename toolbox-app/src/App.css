@@ -1,18 +1,22 @@
+/* Main app container: centers all content */
 .App {
   text-align: center;
 }
 
+/* Logo styling: sets logo size and disables pointer events */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Animation for the logo if user prefers motion */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Header styling: dark background, centers content vertically and horizontally */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +28,12 @@
   color: white;
 }
 
+/* Link styling: sets link color */
 .App-link {
   color: #61dafb;
 }
 
+/* Keyframes for rotating the logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

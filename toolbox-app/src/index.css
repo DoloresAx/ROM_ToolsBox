@@ -1,12 +1,14 @@
+/* Reset default margin and set global font family for the app */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; /* Smoother fonts on WebKit browsers */
+  -moz-osx-font-smoothing: grayscale;  /* Smoother fonts on macOS Firefox */
 }
 
+/* Set monospace font for code elements */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
