@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ROM_ToolsBox/static/css/main.d3610be8.css",
+    "main.js": "/ROM_ToolsBox/static/js/main.4a4117af.js",
+    "static/js/453.e8a6450e.chunk.js": "/ROM_ToolsBox/static/js/453.e8a6450e.chunk.js",
+    "index.html": "/ROM_ToolsBox/index.html",
+    "main.d3610be8.css.map": "/ROM_ToolsBox/static/css/main.d3610be8.css.map",
+    "main.4a4117af.js.map": "/ROM_ToolsBox/static/js/main.4a4117af.js.map",
+    "453.e8a6450e.chunk.js.map": "/ROM_ToolsBox/static/js/453.e8a6450e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3610be8.css",
+    "static/js/main.4a4117af.js"
+  ]
+}
