@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+=======
 // Import testing utilities from React Testing Library
 import { render, screen } from '@testing-library/react';
 // Import the main App component to test
@@ -9,5 +17,6 @@ test('renders learn react link', () => {
   // Look for an element with text matching "learn react" (case-insensitive)
   const linkElement = screen.getByText(/learn react/i);
   // Assert that the element is present in the document
+>>>>>>> main
   expect(linkElement).toBeInTheDocument();
 });

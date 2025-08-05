@@ -204,6 +204,8 @@ const rightButtons = [
   {
     icon: <FaTelegramPlane />,
     link: 'https://t.me/rom_dynamics',
+    // link: 'https://web.telegram.org/k/#@rom_dynamics',
+
     color: '#229ed9',
     label: 'Telegram'
   }

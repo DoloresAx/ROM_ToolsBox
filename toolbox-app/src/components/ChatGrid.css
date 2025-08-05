@@ -1,3 +1,19 @@
+/* for rom toolbox store colour */
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #008080; /* rich teal */
+  letter-spacing: 1.2px;
+  text-shadow: 0 1px 3px rgba(0, 128, 128, 0.4); /* subtle teal glow */
+  margin: 2rem 0;
+  user-select: none;
+}
+
+
+/* for page body */
+
 .custom-card {
   border-radius: 1rem;
   box-shadow: 0 2px 16px rgba(79,195,247,0.3);
@@ -7,10 +23,12 @@
   outline: none;
   cursor: pointer;
 }
+/* for light mode */
 .custom-card.light {
   --card-bg: #f8f9fa;
   color: #212529;
 }
+/* for dark mode */
 .custom-card.dark {
   --card-bg: #23272b;
   color: #f8f9fa;

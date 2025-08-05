@@ -1,0 +1,78 @@
+
+
+/* 🔷 PAGE BACKGROUND — clean, modern, subtle gradient */
+body {
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7); /* Clean blue-gray tones */
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🧊 CARD STYLING */
+.contributor-card {
+  background: linear-gradient(135deg, #ffffff, #f8fafc); /* Soft white-to-light gradient */
+  border-radius: 20px;
+  padding: 1.5rem 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+/* ✨ HOVER + ACTIVE EFFECTS */
+.contributor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.contributor-card:active {
+  transform: scale(0.98);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 🧑‍💻 AVATAR WRAPPER */
+.avatar-wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem;
+}
+
+/* 🎯 AVATAR IMAGE */
+.avatar-wrapper img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #dee2e6;
+}
+
+/* 🧾 TEXT STYLING */
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.card-subtitle {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+/* 🔘 GITHUB BUTTON */
+button {
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+
+button:active {
+  transform: scale(0.97);
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}

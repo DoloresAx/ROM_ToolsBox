@@ -1,7 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { FaRobot, FaGithub, FaMicrophone, FaSatelliteDish, FaBrain, FaEye, FaComments, FaCalculator } from 'react-icons/fa';
+import { FaRocket, FaGithub, FaMicrophone, FaSatelliteDish, FaBrain, FaEye, FaComments, FaCalculator,FaUserEdit } from 'react-icons/fa';
 import './ChatGrid.css';
+import { Link } from 'react-router-dom';
+
 
 
 const gridItems = [
@@ -20,9 +22,11 @@ const gridItems = [
     icon: <FaEye size={32} className="mb-2 text-primary" />, 
   },
   {
-    header: 'Qt Robot Control',
-    icon: <FaRobot size={32} className="mb-2 text-success" />, 
+    header: 'Qt Speed Calculator',
+    icon: <FaRocket size={32} className="mb-2 text-primary" />,
+    link: 'https://doloresax.github.io/ROM_ToolsBox/calculator/index.html',
   },
+ 
   {
     header: 'AI Agent',
     icon: <FaBrain size={32} className="mb-2 text-info" />, 
@@ -37,9 +41,19 @@ const gridItems = [
   },
   {
     header: ' Github',
-    icon: <FaGithub size={32} className="mb-2 text-dark" />, 
+    icon: <FaGithub size={32} className="mb-2 text-primary" />, 
     link: 'https://github.com/ROM-robotics',
   },
+  {
+  header: 'Contributors',
+  icon: <FaUserEdit size={32} className="mb-2 text-primary" />,
+  body: (
+    <Link to="/contributors">
+      View Contributors Info
+    </Link>
+  )
+}
+
 ];
 
 const ChatGrid = ({ theme, filter }) => {
